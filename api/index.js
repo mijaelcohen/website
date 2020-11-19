@@ -20,6 +20,10 @@ const {
   getPublicacionesCasos
 } = require('./lib/medium-casos')
 
+const {
+  getUsers
+} = require('./lib/userRouter')
+
 const upload = multer({ limits: { fileSize: 5000000, files: 1 } }) // 1 file 5MB max
 
 
@@ -30,5 +34,6 @@ Router.post('/validar-subscripcion', mandarConfirmacion)
 Router.get('/subscripcion', agregarEmail)
 Router.post('/contacto', mailContacto)
 Router.post('/trabajo', upload.single('cv'), mailTrabajo, mailTrabajoError) 
+Router.get('/traer-usuarios', getUsers)
 
 module.exports = Router
