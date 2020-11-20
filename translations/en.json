@@ -309,6 +309,12 @@
         }
 
       ]
+    },
+    "users": {
+      "title": "Last user 6 posts",
+      "search": "Search post",
+      "loading": "Loading...",
+      "noResults": "No results found"
     }
   },
   "aboutUs": {

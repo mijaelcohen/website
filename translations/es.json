@@ -316,6 +316,12 @@
 
 
       ]
+    },
+    "users": {
+      "title": "Los ultimos posteos del usuario 6",
+      "search": "Buscar posteo",
+      "loading": "Cargando...",
+      "noResults": "No se encontraron resultados"
     }
   },
   "aboutUs": {

@@ -449,6 +449,47 @@ button {
  position:relative;
  width:auto
 }
+.user-list{
+  display: flex;
+  flex-direction: row;
+}
+
+.user-item{
+  padding: 10px;
+}
+.post-search input{
+  font-size: 20px;
+  position: relative;
+  top: 4px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 4px;
+  margin-right: 20px;
+}
+.post-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.post{
+  flex: 1 0 25%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: white;
+  margin: 5px;
+  border-radius: 4px;
+}
+.post span{
+  display: block;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 5px;
+}
+@media (max-width: 800px) {
+  .user-list,.post-list {
+    flex-direction: column;
+  }
+}
 @media screen and (min-width:1024px) {
  .container-bulma {
   max-width:960px

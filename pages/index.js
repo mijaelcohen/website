@@ -10,6 +10,7 @@ import Collaborate from '../sections/index/containers/Collaborate'
 import Ebooks from '../sections/index/containers/Ebooks'
 import Media from '../sections/index/containers/Media'
 import WhoWeAre from '../sections/index/containers/WhoWeAre'
+import Users from '../sections/index/containers/Users'
 import Publications from '../sections/index/containers/Publications'
 import Footer from '../containers/Footer'
 import Content from "../sections/about/containers/Content"
@@ -94,6 +95,7 @@ export default class extends Component {
           <Ebooks />
           <Media />
           <WhoWeAre />
+          <Users/>
           <Footer />
         </Layout>
         <style jsx>{`
